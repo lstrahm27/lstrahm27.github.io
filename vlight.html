@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>V-Light</title>   
+        <style>
+            h1 {
+                color: #222;
+                text-align: center;
+                font-family: "Helvetica";
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+         <p style="text-align: center">
+                        <audio controls="controls" preload="auto" autoplay loop>
+                    <source src="Images/lovefool.mp3" type="audio/mpeg" />
+                    Sorry, you're not dank enough to enjoy this.
+                        </audio>
+                    </p>
+        </div>
+         <div>
+            <script>
+            function light(sw) {
+                var pic;
+                if (sw == 0) {
+                    pic = "Images/vlight-off.png"
+                } else { 
+                    pic = "Images/vlight-on.png"
+                }
+                document.getElementById("vlight").src = pic;
+            }
+            </script>
+            <p style="text-align:center;"><img id="vlight" src="Images/vlight-off.png"  usemap="#vlight" width="900px" height="506"></p>
+            <map name="vlight">
+                <area shape="rect" title="on" onclick="light(1)" href="javascript:vlight(1);" coords="392,340 460,375">
+                <area shape="rect" title="off" onclick="light(0)" href="javascript:vlight(0);" coords="485,334  550,376">
+            </map>
+             <h1>Click it, ya bish</h1>
+            
+        </div>
+    </body>
+
+
+</html>
