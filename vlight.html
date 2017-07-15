@@ -11,7 +11,7 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-color: #c6d7cd">
         <div>
          <p style="text-align: center">
                         <audio controls="controls" preload="auto" autoplay loop>
@@ -25,17 +25,17 @@
             function light(sw) {
                 var pic;
                 if (sw == 0) {
-                    pic = "Images/vlight-off.png"
+                    pic = "Images/vlight-fs-off.png"
                 } else { 
-                    pic = "Images/vlight-on.png"
+                    pic = "Images/vlight-fs-on.png"
                 }
                 document.getElementById("vlight").src = pic;
             }
             </script>
-            <p style="text-align:center;"><img id="vlight" src="Images/vlight-off.png"  usemap="#vlight" width="900px" height="506"></p>
+            <p style="text-align:center;"><img id="vlight" src="Images/vlight-fs-off.png"  usemap="#vlight" width="600px"></p>
             <map name="vlight">
-                <area shape="rect" title="on" onclick="light(1)" href="javascript:vlight(1);" coords="392,340 460,375">
-                <area shape="rect" title="off" onclick="light(0)" href="javascript:vlight(0);" coords="485,334  550,376">
+                <area shape="rect" title="on" onclick="light(1)" href="javascript:vlight(1);" coords="227,373 280,420">
+                <area shape="rect" title="off" onclick="light(0)" href="javascript:vlight(0);" coords="295,380  346,420">
             </map>
              <h1>Click it, ya bish</h1>
             
