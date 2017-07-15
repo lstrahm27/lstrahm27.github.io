@@ -83,3 +83,10 @@ p {
     margin: -20px;
     margin-bottom: 20px;
 }
+.footer {
+    padding: 1em;
+    text-align: center;
+    background-color: #e8ffff;
+    color: #fff;
+    font-family: "Courier";
+}
