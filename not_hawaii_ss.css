@@ -76,3 +76,10 @@ p {
     
     and (min-device-width : 320px)
     and (max-device-width : 480px){ .mobileHide {display: none;}}
+
+.header {
+    background-color: #e8ffff;
+    border: 2px solid #fbc9ff;
+    margin: -20px;
+    margin-bottom: 20px;
+}
