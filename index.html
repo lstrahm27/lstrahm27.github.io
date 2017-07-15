@@ -67,9 +67,9 @@
             function groovy(bg) {
                 var pic;
                 if (bg == 0) {
-                    pic = "images/whiteimg.png"
+                    pic = "Images/whiteimg.png"
                 } else { 
-                    pic ="images/groovy.gif"
+                    pic ="Images/groovy.gif"
                 }
                 document.getElementById("groovy").background = pic;
             }
@@ -98,8 +98,27 @@
                     </p>
             <p>Okay, well I did that and it was pretty easy. To fully customize it I'd need to code in a language called JQuery which I don't know ass about, so maybe I'll come back later and make it neater.</p>
             <p>I've just been working on this all day, but I finally found a system that works so that you can see it even on your phone.<br> Jerry's back now. He asked me to pick him up from the airport but I told him I'm too sick. Which I am, but I mean he can afford to take the bus once. We are gonna play some games tonight when he gets back which I'm excited for. You're probably at the movie now so hopefully I've fixed this by the time you're back. I'll keep updating it too so you can always go back to this URL to see if I've updated.<br>PS I finished most of the HTML learning so CSS is next which means I'll learn how to actually style it better and make it look all pretty for you.</p>
+            <p>While waiting for Jerry I made a thing, click it</p>
         </div> 
-        
+        <div>
+            <script>
+            function light(sw) {
+                var pic;
+                if (sw == 0) {
+                    pic = "Images/vlight-off.png"
+                } else { 
+                    pic = "Images/vlight-on.png"
+                }
+                document.getElementById("vlight").src = pic;
+            }
+            </script>
+            <p style="text-align:center;"><img id="vlight" src="Images/vlight-off.png"  usemap="#vlight" width="900px" height="506"></p>
+            <map name="vlight">
+                <area shape="rect" title="on" onclick="light(1)" href="javascript:vlight(1);" coords="392,340 460,375">
+                <area shape="rect" title="off" onclick="light(0)" href="javascript:vlight(0);" coords="485,334  550,376">
+            </map>
+            
+        </div>
         
         
         <br>
