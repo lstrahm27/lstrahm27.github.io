@@ -212,3 +212,35 @@ a:active {
   .prev, .next,.text {font-size: 11px}
 }
 
+/* Secret paragraph */
+.secrettxthidden {
+    font-size: 1%;
+    color: white;
+}
+
+.secrettxtreveal {
+    font-size: 100%;
+    color: rebeccapurple;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0080ff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #f2f2f2}
+
+.button:active {
+  background-color: #0080ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
