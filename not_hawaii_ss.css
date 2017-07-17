@@ -127,14 +127,15 @@ a:active {
 }
 
 /* Next and Prev buttons */
+
+
 .prev, .next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
+    position: absolute; 
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: gray;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -168,7 +169,6 @@ a:active {
     color: #bbb;
     font-size: 12px;
     padding: 8px 12px;
-    position: absolute;
     top: 0;
     text-align: center;
 }
@@ -211,3 +211,4 @@ a:active {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
