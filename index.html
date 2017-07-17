@@ -126,8 +126,85 @@
             <p> Well I went to safeway to get cat litter and food and stuff and ended up spending 70$, so I hope she's happy. Also I made a sausage and egg burrito and it was amazing. I took some niquil and am now just chilling. I canceled on Arash and of course he was like oh you're a pussy, but whatever fuck him.</p>
             <p>I just finished playing a nice game night, won a few times. But I went down stairs and ran into very drunk Austin with his tindr date lol. Sorry I don't have much for today, I'll put more effort in once I'm feeling better.</p>
         </div>
-        
+        <div>
+        <h6 class="date_entry" id="july16">July 16</h6>
+        <p>Okay, I just finished this slideshow thing. It took a lot of work and I'm not sure it works well on mobile, but I'm happy with it. I hope you're having fun shopping.</p>
+        </div>
+         <div class="slideshow-containter" style="border:">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="Images/ss1/ss1_img1.jpg" style="width:100%">
+                <div class="text">The Menu</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="Images/ss1/ss1_img2.jpg" style="width:100%">
+                <div class="text">The Date</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="Images/ss1/ss1_img3.jpg" style="width:100%">
+                <div class="text">The Food</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="Images/ss1/ss1_img4.jpg" style="width:100%">
+                <div class="text">The Dessert</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="Images/ss1/ss1_img5.png" style="width:100%">
+                <div class="text">The Beautiful Angel</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
         <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+            showSlides(slideIndex);
+            
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+            
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+        
+        
         <div class="footer">
             <a href="index.html">^ Back to top ^</a>
         </div>
